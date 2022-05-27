@@ -44,6 +44,7 @@ def compute_p_one(id,w_margin,env,savepath):
     # np.savez_compressed(savepath,safeW1=safeweight1,safeB1=safeweight2)
     return math.exp(p),np.min(maxss)
 
+
 def compute_p(id,w_margin,savepath):
     [sW_0, sb_0, sW_1, sb_1]=GLOBAL_samples
     vW_0, vb_0, vW_1, vb_1 = [], [], [], []
@@ -273,6 +274,8 @@ def interval_all_L(x, eps,out_poly,out_eps,
 
     return isPass,final
 
+#code for propagate_interval and compute probability
+#taken for here https://github.com/matthewwicker/ProbabilisticSafetyforBNNs
 def propagate_interval(W, W_std, b, b_std, x_l, x_u, eps):
     W_l, W_u = W-(eps*W_std), W+(eps*W_std)   
     b_l, b_u = b-(eps*b_std), b+(eps*b_std)  
