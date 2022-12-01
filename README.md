@@ -3,7 +3,7 @@
 # Safety Verification of Nonlinear Systems with Bayesian Neural Network Controllers
 
 This repository is the official implementation of [Safety Verification of Nonlinear Systems with Bayesian Neural Network Controllers]
-![avatar](BNNStructure5.png)
+![avatar](BNNStructure5.png), and the supplemental material sees the supplemental_material_BNN_Verification.pdf.
 ## Requirements
 
 To install requirements:
